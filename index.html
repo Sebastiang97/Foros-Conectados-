@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prueba</title>
+  <!-- CSS only -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="col-sm-12 m-3">
+      <p class="h3">Navégala con Netflix</p>
+      <p class="h4">Por: Administrador de Foro</p>
+      <div class="text-center">
+        <img class="img-fluid m-3" src="https://picsum.photos/500" alt="">
+      </div>
+      
+      <div id="root" class="my-3">
+      </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="app6.js"></script>
+<script type="text/javascript">
+  /*  
+  emailjs.init("user_BRWR18Gk7pp2BTVNbKNtr");
+    
+  let headers = {
+    'Content-type': 'application/json'
+  };
+
+  let params = {
+    user_id: 'user_BRWR18Gk7pp2BTVNbKNtr',
+    service_id: 'service_t4wk5cf',
+    template_id: 'template_hgarvmd',
+    template_params: {
+      'from_name': 'Conectados Foros',
+      'to_name': 'Sebastian',
+      'message': 'Nuevo Mensaje enviado a foro Pruebas'
+    }
+  };
+  
+
+  let options = {
+    method: 'POST',
+    headers: headers,
+    body: JSON.stringify(params)
+  };
+
+  fetch('https://api.emailjs.com/api/v1.0/email/send', options)
+    .then((httpResponse) => {
+      if (httpResponse.ok) {
+        console.log('Your mail is sent!');
+      } else {
+        return httpResponse.text()
+          .then(text => Promise.reject(text));
+      }
+    })
+    .catch((error) => {
+        console.log('Oops... ' + error);
+    });
+
+    console.log('helloo email');*/
+</script>
+</body>
+</html>
