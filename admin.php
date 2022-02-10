@@ -3,6 +3,7 @@
  
  $id = $_REQUEST['id'];
  $estado = $_REQUEST['estado'];
+ $comentario = $_REQUEST['comentario'];
  
 
  echo "id: $id<br> estado: $estado<br>";
@@ -17,9 +18,11 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 
-
-$edit ="UPDATE foros SET estado = '$estado' WHERE id = $id";
-
+if($comentario !== ''){
+ $edit ="UPDATE foros SET estado = '$estado', msgAdmin = '$comentario', Admin_Fecha = now() WHERE id = $id";
+}else{
+ $edit ="UPDATE foros SET estado = '$estado', Admin_Fecha = now() WHERE id = $id";
+}
 echo "<br>$edit";
 
 

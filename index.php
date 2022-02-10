@@ -16,7 +16,7 @@ $json = array();
 if (mysqli_num_rows($result)>0) {
  while ($row = $result->fetch_array()) {
 
-  $data = array('unique' => $row['id_coment'],'cedula' => $row['Cedula'],'nombres' => $row['nombres'],'msg' => $row['msg'],'posicion' => $row['posicion'],'foro' => $row['foro'], 'estado' => $row['estado']);
+  $data = array('unique' => $row['id_coment'],'cedula' => $row['Cedula'],'nombres' => $row['nombres'],'msg' => $row['msg'],'fecha_creacion' => $row['creacion_fecha'],'posicion' => $row['posicion'],'msgAdmin' => $row['msgAdmin'],'Admin_Fecha' => $row['Admin_Fecha'],'foro' => $row['foro'], 'estado' => $row['estado']);
   $comentario = array('id' => $row['id'], 'data' => $data );
 
   array_push($json, $comentario);

@@ -18,9 +18,9 @@ if ($conn->connect_error) {
 }
 
 if($posicion =="p"){
- $sql ="INSERT INTO foros (`id`, `id_coment`, `Cedula`, `nombres`, `msg`, `posicion`, `foro`, `estado`) VALUES (NULL, '$id_coment','$cedula', '$nombres', '$comentario', '$posicion', '$foro', '$estado')";
+ $sql ="INSERT INTO foros (`id`, `id_coment`, `Cedula`, `nombres`, `msg`, `creacion_fecha`, `posicion`, `foro`, `estado`) VALUES (NULL, '$id_coment','$cedula', '$nombres', '$comentario', now(), '$posicion', '$foro', '$estado')";
 }else{
- $sql ="INSERT INTO foros (`id`, `id_coment`, `Cedula`, `nombres`, `msg`, `posicion`, `foro`, `estado`) VALUES (NULL, '$id_coment','$cedula', '$nombres', '$comentario', '', '$foro', '$estado')";
+ $sql ="INSERT INTO foros (`id`, `id_coment`, `Cedula`, `nombres`, `msg`, `creacion_fecha`, `posicion`, `foro`, `estado`) VALUES (NULL, '$id_coment','$cedula', '$nombres', '$comentario', now(), '', '$foro', '$estado')";
 }
 
 $edit ="UPDATE foros SET posicion = '$posicion' WHERE id = $res";
@@ -43,7 +43,7 @@ if($res != ''){
  }
 }
 
-header("Location: https://conectados.com.co/web/guest/-/foros");
+//header("Location: https://conectados.com.co/web/guest/-/foros");
 
 
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ 
+ <a href="https://universidadclarocomercial.claro.com.co/conectados/convencion2021/prueba/exportEventos.php" download="apple">
+  <button type="button">Download</button> 
+ </a> 
+ 
+ <script >
+  /*
+  let a = Date.now("02/01/22")
+  let b = Date.now("02/15/22")
+  let c = Date.now("02/10/22")
+  */
+  /**/
+  let a = new Date("02/01/22");
+  let b = new Date("02/15/22");
+  let c = new Date("02/20/22");
+  
+  console.log("a: "+a);
+  console.log("b: "+b);
+  console.log("c: "+c);
+  (c>a & c<b) ? console.log("dentro del margen") : console.log("fuera del margen");
+  
+  console.log(a.toLocaleDateString());
+  console.log(b.toLocaleDateString());
+  console.log(c.toLocaleDateString());
+ </script>
+</body>
+</html>
